@@ -1,0 +1,409 @@
+@font-face {
+  font-family: "TT Hoves DemiBold";
+  src: url("../../Assets/fonts/TT\ Hoves/TT Hoves DemiBold.otf");
+}
+@font-face {
+  font-family: "TT Hoves ExtraBold";
+  src: url("../../Assets/fonts/TT\ Hoves/TT Hoves ExtraBold.otf");
+}
+@font-face {
+  font-family: "TT Hoves Medium";
+  src: url("../../Assets/fonts/TT\ Hoves/TT Hoves Medium.otf");
+}
+@font-face {
+  font-family: "TT Hoves Light";
+  src: url("../../Assets/fonts/TT\ Hoves/TT Hoves Light.otf");
+}
+@font-face {
+  font-family: "TT Hoves DemiBold Italic";
+  src: url("../../Assets/fonts/TT\ Hoves/TT Hoves DemiBold Italic.otf");
+}
+@font-face {
+  font-family: "TT Hoves ExtraLight";
+  src: url("../../Assets/fonts/TT\ Hoves/TT Hoves ExtraLight.otf");
+}
+@font-face {
+  font-family: "TT Hoves Black";
+  src: url("../../Assets/fonts/TT\ Hoves/TT Hoves Black.otf");
+}
+
+.upper-part {
+  width: 100vw;
+  background-color: #1a1a1a;
+}
+
+.empowering-container {
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  margin-top: 70px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+.empowering-container-text {
+  margin-left: 8vw;
+  display: flex;
+  width: 40vw;
+  flex-direction: column;
+  justify-content: center;
+}
+.empowering-container-text .empowering {
+  color: #fcfcfc;
+  font-family: "TT Hoves DemiBold";
+  font-size: 4rem;
+}
+.award-container {
+  color: #da3540;
+  font-family: "TT Hoves DemiBold";
+  margin-top: 50px;
+}
+.award-image {
+  display: flex;
+  width: 80%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.empowering-container-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.group20-container {
+  /* position: absolute; */
+  /* width: 350px;
+     height: 320px;
+      overflow: hidden; */
+  /* right: -50px; */
+}
+.group18 {
+  width: 460px;
+  margin-right: 100px;
+}
+
+.group20 {
+  position: absolute;
+  /* position: relative; */
+  width: 200px;
+  right: 0px;
+  bottom: -15px;
+}
+.content-header {
+  display: flex;
+}
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.content-text {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.content-header p:first-child {
+  color: #da3540;
+  font-family: "TT Hoves DemiBold";
+  font-size: 2rem;
+}
+.content-header p:last-child {
+  color: #da3540;
+  font-family: "TT Hoves DemiBold";
+  font-size: 0.8rem;
+  width: 20px;
+  margin-left: 10px;
+}
+
+/* scroll bar css */
+/* ----------------------------------------------------------------- */
+.scroll-bar {
+  position: relative;
+  margin-top: 200px;
+  /* overflow: hidden; */
+}
+.scroll-par{
+  overflow: hidden;
+}
+
+.scroll {
+  white-space: nowrap;
+  margin: 0 2em;
+}
+
+
+.line-1st, .line-2nd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "TT Hoves DemiBold";
+  color: #da3540;
+  font-size: 44px;
+}
+.line-1st{
+  animation: RightToLeft 10s infinite linear;
+}
+@keyframes  RightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-70%);
+  }
+}
+.line-2nd{
+  animation: LeftToRight 10s infinite linear;
+}
+@keyframes  LeftToRight {
+  from {
+    transform: translateX(-70%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* --------------------------------------------- */
+
+.group684 {
+  position: absolute;
+  top: -300px;
+  right: 5vw;
+}
+.group683 {
+  position: absolute;
+  bottom: -500px;
+  z-index: 1;
+}
+
+.product-table {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  column-gap: 5vw;
+  margin-top: 40px;
+  margin-left: 12vw;
+  margin-right: 12vw;
+}
+
+.product-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  /* opacity: 0.1; */
+}
+.product-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+  width: 250px;
+  margin-top: 100px;
+}
+.product-header {
+  color: white;
+  font-family: "TT Hoves DemiBold";
+  margin-top: 20px;
+}
+.product-text {
+  color: white;
+  font-family: "TT Hoves ExtraLight";
+  margin-top: 20px;
+  width: 250px;
+}
+
+.group694 {
+  position: absolute;
+  width: 400px;
+  bottom: 0px;
+  right: 8vw;
+}
+.group702 {
+  position: absolute;
+  width: 300px;
+  top: 850px;
+  right: 0px;
+}
+/* ----------------------------------------------- */
+.bottom-content {
+  background-color: #3d2526;
+  background-image: linear-gradient(#1a1a1a, #2d1c1e);
+  padding-top: 200px;
+  /* padding-bottom: 70px; */
+}
+.tech-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tech-logo-header {
+  color: #da3540;
+}
+.logos-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 60%;
+  margin-top: 40px;
+}
+.contact-container {
+  width: 100%;
+}
+.contact-container2 {
+  position: relative;
+  top: 130px;
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.contact-text {
+  font-family: "TT Hoves DemiBold";
+  font-size: 3.7rem;
+  width: 600px;
+  margin-left: 7vw;
+}
+.form-div {
+  margin-right: 7vw;
+}
+.footer-container {
+  padding-top: 200px;
+  padding-bottom: 70px;
+  background-color: #da3540;
+}
+.footer-text {
+  font-family: "TT Hoves Black";
+  font-size: 3rem;
+  color: white;
+  margin-left: 10vw;
+}
+
+/* ----------------------------------------------------- */
+.content-image-mob {
+  display: none;
+}
+.group695{
+  display: none;
+}
+.group683a{
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .content-image-mob {
+    display: block;
+  }
+  .content-image {
+    display: none;
+  }
+  .group695{
+    display: block;
+    position: absolute;
+    /* width: 400px; */
+    bottom: -150px;
+    left: 0px;
+  }
+  .group694{
+    display: none;
+  }
+  .group683{
+    display: none;
+  }
+  .group683a{
+    display: block;
+    position: absolute;
+    bottom: -500px;
+    z-index: 1;
+  }
+  .group684 {
+    top: -240px;
+    right: 2.5vw;
+    width: 400px;
+  }
+  .group702 {
+    width: 250px;
+  }
+  .group18{
+    width: 300px;
+  }
+  .group19-mob{
+    margin-top: 30px;
+    width: 300px;
+  }
+  .group20{
+    width: 150px;
+    bottom: 150px;
+  }
+  .empowering-container{
+    justify-content: center;
+  }
+  .empowering-container-text {
+    width: 100%;
+  }
+  .award-image img{
+    width: 70px;
+    margin-bottom: 50px;
+  }
+  .content-text{
+    width: 100%;
+  }
+  .content-body{
+    width: 260px !important;
+  }
+  @keyframes  RightToLeft {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes  LeftToRight {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 560px){
+  html{
+    font-size: 14px;
+  }
+  .group20{
+    width: 100px;
+  }
+  .group19-mob, .group18{
+    width: 260px;
+  }
+  @keyframes  RightToLeft {
+    from {
+      transform: translateX(130%);
+    }
+    to {
+      transform: translateX(-160%);
+    }
+  }
+  @keyframes  LeftToRight {
+    from {
+      transform: translateX(-160%);
+    }
+    to {
+      transform: translateX(130%);
+    }
+  }
+} 

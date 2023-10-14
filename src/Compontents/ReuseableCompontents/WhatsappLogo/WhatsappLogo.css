@@ -1,0 +1,59 @@
+/* for desktop */
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+}
+
+.whatsapp-icon {
+    margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+    .whatsapp-icon {
+        margin-top: 10px;
+    }
+
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+
+/* Style for the WhatsApp link wrapper */
+.whatsapp-wrapper {
+    position: relative;
+    display: inline-block;
+}
+/* Style for the hover text */
+.hover-text {
+    position: absolute;
+    left: -110px; /* Adjust the left positioning as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #25d366; /* Green background color */
+    color: #fff; /* White text color */
+    padding: 6px 10px; /* Adjust padding as needed */
+    border-radius: 20px; /* Rounded rectangle shape */
+    font-size: 14px; /* Adjust the font size */
+    opacity: 0; /* Initially, the text is hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Style for the hover effect */
+.whatsapp-wrapper:hover .hover-text {
+    opacity: 1; /* Show the text on hover */
+}
