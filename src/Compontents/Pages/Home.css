@@ -92,6 +92,8 @@
 }
 .content-header {
   display: flex;
+  justify-content: center;
+  align-items: start;
 }
 .content-container {
   display: flex;
@@ -113,9 +115,10 @@
 .content-header p:last-child {
   color: #da3540;
   font-family: "TT Hoves DemiBold";
-  font-size: 0.8rem;
-  width: 20px;
+  font-size: 1rem;
+  /* width: 20px; */
   margin-left: 10px;
+  margin-top: 0.3rem;
 }
 
 /* scroll bar css */
@@ -125,7 +128,7 @@
   margin-top: 200px;
   /* overflow: hidden; */
 }
-.scroll-par{
+.scroll-par {
   overflow: hidden;
 }
 
@@ -134,8 +137,8 @@
   margin: 0 2em;
 }
 
-
-.line-1st, .line-2nd {
+.line-1st,
+.line-2nd {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,10 +146,10 @@
   color: #da3540;
   font-size: 44px;
 }
-.line-1st{
+.line-1st {
   animation: RightToLeft 10s infinite linear;
 }
-@keyframes  RightToLeft {
+@keyframes RightToLeft {
   from {
     transform: translateX(0%);
   }
@@ -154,10 +157,10 @@
     transform: translateX(-70%);
   }
 }
-.line-2nd{
+.line-2nd {
   animation: LeftToRight 10s infinite linear;
 }
-@keyframes  LeftToRight {
+@keyframes LeftToRight {
   from {
     transform: translateX(-70%);
   }
@@ -231,6 +234,7 @@
   width: 300px;
   top: 850px;
   right: 0px;
+  z-index: -1;
 }
 /* ----------------------------------------------- */
 .bottom-content {
@@ -279,6 +283,9 @@
   margin-right: 7vw;
 }
 .footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: 200px;
   padding-bottom: 70px;
   background-color: #da3540;
@@ -287,17 +294,24 @@
   font-family: "TT Hoves Black";
   font-size: 3rem;
   color: white;
-  margin-left: 10vw;
+  margin-left: 20vw;
+}
+.ofc-address {
+  color: white;
+  font-family: "TT Hoves DemiBold";
+  width: 360px;
+  margin-right: 10vw;
+  margin-top: 10px;
 }
 
 /* ----------------------------------------------------- */
 .content-image-mob {
   display: none;
 }
-.group695{
+.group695 {
   display: none;
 }
-.group683a{
+.group683a {
   display: none;
 }
 @media only screen and (max-width: 700px) {
@@ -307,20 +321,20 @@
   .content-image {
     display: none;
   }
-  .group695{
+  .group695 {
     display: block;
     position: absolute;
     /* width: 400px; */
     bottom: -150px;
     left: 0px;
   }
-  .group694{
+  .group694 {
     display: none;
   }
-  .group683{
+  .group683 {
     display: none;
   }
-  .group683a{
+  .group683a {
     display: block;
     position: absolute;
     bottom: -500px;
@@ -334,34 +348,35 @@
   .group702 {
     width: 250px;
   }
-  .group18{
+  .group18 {
     width: 300px;
   }
-  .group19-mob{
+  .group19-mob {
     margin-top: 30px;
-    width: 300px;
+    width: 230px !important;
   }
-  .group20{
+  .group20 {
     width: 150px;
     bottom: 150px;
   }
-  .empowering-container{
+  .empowering-container {
     justify-content: center;
   }
   .empowering-container-text {
     width: 100%;
   }
-  .award-image img{
+  .award-image img {
     width: 70px;
     margin-bottom: 50px;
   }
-  .content-text{
+  .content-text {
     width: 100%;
+    margin-top: 30px;
   }
-  .content-body{
+  .content-body {
     width: 260px !important;
   }
-  @keyframes  RightToLeft {
+  @keyframes RightToLeft {
     from {
       transform: translateX(0%);
     }
@@ -369,7 +384,7 @@
       transform: translateX(-100%);
     }
   }
-  @keyframes  LeftToRight {
+  @keyframes LeftToRight {
     from {
       transform: translateX(-100%);
     }
@@ -377,20 +392,29 @@
       transform: translateX(0%);
     }
   }
-  
 }
 
-@media only screen and (max-width: 560px){
-  html{
-    font-size: 14px;
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: 13px;
   }
-  .group20{
+  .group20 {
     width: 100px;
   }
-  .group19-mob, .group18{
+  .group19-mob,
+  .group18 {
     width: 260px;
   }
-  @keyframes  RightToLeft {
+  .logos-div {
+    justify-content: center;
+  }
+  .content-image-mob {
+    margin-right: 45px;
+  }
+  .content-body {
+    margin-top: 90px !important;
+  }
+  @keyframes RightToLeft {
     from {
       transform: translateX(130%);
     }
@@ -398,7 +422,7 @@
       transform: translateX(-160%);
     }
   }
-  @keyframes  LeftToRight {
+  @keyframes LeftToRight {
     from {
       transform: translateX(-160%);
     }
@@ -406,4 +430,10 @@
       transform: translateX(130%);
     }
   }
-} 
+}
+
+@media only screen and (max-width: 380px) {
+  html {
+    font-size: 11px;
+  }
+}

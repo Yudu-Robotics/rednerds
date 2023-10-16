@@ -106,10 +106,10 @@ function Home() {
             <div className="tech-logo-container">
                 <p className="tech-logo-header"><span style={{ marginRight: "20px" }}>/</span>TECH TITANS WE SERVE{"  "}<span style={{ marginLeft: "20px" }}>/</span></p>
                 <div className="logos-div">
-                    <img src={renderImage("tessolLogo")} alt="TESSOL innovate Preserve grow" />
-                    <img src={renderImage("c14Logo")} alt="1C4 logo" />
-                    <img src={renderImage("thinkTacLogo")} alt="ThinkTac logo" />
-                    <img src={renderImage("biboxlabLogo")} alt="bibox labs logo" />
+                    <img style={{marginTop:"20px"}} src={renderImage("tessolLogo")} alt="TESSOL innovate Preserve grow" />
+                    <img style={{marginTop:"20px"}} src={renderImage("c14Logo")} alt="1C4 logo" />
+                    <img style={{marginTop:"20px"}} src={renderImage("thinkTacLogo")} alt="ThinkTac logo" />
+                    <img style={{marginTop:"20px"}} src={renderImage("biboxlabLogo")} alt="bibox labs logo" />
                 </div>
             </div>
 
@@ -130,6 +130,9 @@ function Home() {
             <div className="footer-text">
                 <p>RED <span style={{ marginLeft: "20px" }}>/</span></p>
                 <p>NERDS</p>
+            </div>
+            <div className="ofc-address">
+                <p>No. 29, Beratena Agrahara, Next to Play Factory, Hosur Main Road, Electronic City Post, Bangalore – 560100, Karnataka, India</p>
             </div>
         </div>
     </div>)

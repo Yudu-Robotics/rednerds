@@ -8,7 +8,7 @@ function Form() {
     "entry.1213070634": "",
     "entry.556407093": "",
     "entry.1372544995": "",
-    "entry.231518533": "",
+    "entry.1330038153": "",
     "entry.241667131": "",
   });
 
@@ -25,8 +25,9 @@ function Form() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    if (!formData["entry.1213070634"] || !formData["entry.556407093"] || !formData["entry.1372544995"] || !formData["entry.231518533"] || !formData["entry.241667131"]) {
+    console.log(formData)
+
+    if (!formData["entry.1213070634"] || !formData["entry.556407093"] || !formData["entry.1372544995"] || !formData["entry.1330038153"] || !formData["entry.241667131"]) {
       alert("Please filled the all input fill!");
       return;
     }
@@ -39,9 +40,9 @@ function Form() {
     if (!mobRegex.test(formData["entry.1372544995"])) {
       alert("Enter a valid phone Number Id!");
       return;
-    } 
+    }
 
-    setSubmit(true);
+    // setSubmit(true);
 
     const formDataStr = new URLSearchParams(formData).toString();
     let url = `https://docs.google.com/forms/d/e/1FAIpQLScO6AgxA9osPewSjz6gHxTtIi5VwmGDNXbhuNb1UTFDYa4IEA/formResponse`;
@@ -53,6 +54,9 @@ function Form() {
         },
         body: formDataStr,
       });
+
+    } catch (error) {
+      console.log(error)
       alert("Form submitted successfully. Thanks!");
       setFormData({
         "entry.1213070634": "",
@@ -61,14 +65,43 @@ function Form() {
         "entry.1330038153": "",
         "entry.241667131": "",
       })
-    } catch (error) {
-      console.log("Error submitting form:", error);
     }
   };
 
-  console.log(formData)
 
-
+  /*
+  ID for Input fields - 
+  Name - entry.1213070634
+  Phone Number - entry.1372544995
+  Email Address - entry.556407093
+  Drop-down - entry.231518533
+  Description - entry.241667131
+  
+  entry.1213070634: tushar
+  entry.1372544995: 967
+  entry.556407093: tu@mai.com
+  entry.241667131: tttt
+  entry.1330038153: CAD Design
+  
+  entry.231518533
+  : 
+  ""
+  entry.241667131
+  : 
+  "ku"
+  entry.556407093
+  : 
+  "roman123@gg.com"
+  entry.1213070634
+  : 
+  "roman"
+  entry.1330038153
+  : 
+  "Partner"
+  entry.1372544995
+  : 
+  "7626895622"
+  */
 
   return (
     <div>
@@ -103,13 +136,13 @@ function Form() {
         <select
           onChange={handleInputData("entry.1330038153")}
           value={formData["entry.1330038153"]}
-          id="entry.1330038153"
+          id="entry.231518533"
           name="entry.1330038153"
         >
           <option value="" disabled selected hidden>
             WHAT ARE YOU LOOKING FOR
           </option>
-          <option value="Partner">CAD-Design</option>
+          <option value="CAD-Design">CAD-Design</option>
           <option value="Laser CNC">Laser CNC</option>
           <option value="ESDM / PCBA">ESDM / PCBA</option>
           <option value="Rapid Prototyping">Rapid Prototyping</option>
