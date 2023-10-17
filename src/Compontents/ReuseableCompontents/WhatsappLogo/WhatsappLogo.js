@@ -4,7 +4,7 @@ function WhatsappLogo(){
     return(<div style={{backgroundColor:"#da3540"}}>
     <div className="whatsapp-wrapper">
       <a
-        href="https://wa.me/919008333233"
+        href="https://wa.me/918951098838"
         className="whatsapp_float"
         target="_blank"
         rel="noopener noreferrer"
