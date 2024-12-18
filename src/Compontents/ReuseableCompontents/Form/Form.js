@@ -3,7 +3,6 @@ import "./Form.css";
 // import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 function Form() {
-  const [submit, setSubmit] = useState(false);
   const [formData, setFormData] = useState({
     "entry.1213070634": "",
     "entry.556407093": "",

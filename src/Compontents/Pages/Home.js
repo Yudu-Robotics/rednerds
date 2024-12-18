@@ -1,9 +1,7 @@
 import renderImage from "../RenderImages";
 import Header from "../ReuseableCompontents/Header/Header";
-import group20 from "../../Assets/Images/imags/Group 20.png";
 import "./Home.css"
 import { productData } from "./productData";
-import { render } from "@testing-library/react";
 import Form from "../ReuseableCompontents/Form/Form";
 
 function Home() {
@@ -36,10 +34,10 @@ function Home() {
             <div className="content-container">
                 <div className="content-text">
                     <div className="content-header">
-                        <p>I</p>
+                        <span><img src={renderImage("logo")} alt="" style={{width: "11pt", height: "22pt"}} /></span>
                         <p>WHO ARE WE</p>
                     </div>
-                    <div style={{ fontFamily: "TT Hoves Light", width: "21vw", marginTop: "150px" }} className="content-body">
+                    <div style={{ fontFamily: "TT Hoves Light", fontSize: "20pt", width: "21vw", marginTop: "150px" }} className="content-body">
                         <p style={{ color: "white" }}>
                             At Red Nerds, we are a team of passionate design engineers dedicated to turning visionary concepts into reality. We thrive on challenges, turning them into opportunities to create innovative solutions.
                         </p>
@@ -107,9 +105,19 @@ function Home() {
                 <p className="tech-logo-header"><span style={{ marginRight: "20px" }}>/</span>TECH TITANS WE SERVE{"  "}<span style={{ marginLeft: "20px" }}>/</span></p>
                 <div className="logos-div">
                     <img style={{marginTop:"20px"}} src={renderImage("tessolLogo")} alt="TESSOL innovate Preserve grow" />
-                    <img style={{marginTop:"20px"}} src={renderImage("c14Logo")} alt="1C4 logo" />
+                    <img style={{marginTop:"20px"}} src={renderImage("c14Logo")} alt="IC4 logo" />
                     <img style={{marginTop:"20px"}} src={renderImage("thinkTacLogo")} alt="ThinkTac logo" />
-                    <img style={{marginTop:"20px"}} src={renderImage("biboxlabLogo")} alt="bibox labs logo" />
+                    <img style={{marginTop:"20px"}} src={renderImage("noshLogo")} alt="Nosh logo" />
+                    <img style={{marginTop:"20px"}} src={renderImage("scikraftLogo")} alt="Scikraft logo" />
+
+                </div>
+                <div className="logos-div">
+                    <img style={{marginTop:"20px"}} src={renderImage("vayavyaLogo")} alt="Vayavya Labs Logo" />
+                    <img style={{marginTop:"20px"}} src={renderImage("cclLogo")} alt="IIT CCL logo" />
+                    <img style={{marginTop:"20px"}} src={renderImage("etherwhereLogo")} alt="Etherwhere logo" />
+                    <img style={{marginTop:"20px"}} src={renderImage("yuduroboticsLogo")} alt="Yudu Robotics logo" />
+                    <img style={{marginTop:"20px"}} src={renderImage("anexgateLogo")} alt="AnexGATE logo" />
+
                 </div>
             </div>
 

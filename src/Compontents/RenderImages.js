@@ -28,6 +28,14 @@ import biboxlabLogo from "../Assets/Images/imags/biboxlab-logo.png";
 import tessolLogo from "../Assets/Images/imags/Tessol-Logo-01.png";
 import thinkTacLogo from "../Assets/Images/imags/ThinkTac_Logo.png";
 import c14Logo from "../Assets/Images/imags/i4c_white.png";
+import anexgateLogo from "../Assets/Images/imags/Anexgate.png";
+import etherwhereLogo from "../Assets/Images/imags/etherwhere.png";
+import cclLogo from "../Assets/Images/imags/IIT_CCL.png";
+import noshLogo from "../Assets/Images/imags/Nosh.png";
+import vayavyaLogo from "../Assets/Images/imags/vayavya-logo.png";
+import yuduroboticsLogo from "../Assets/Images/imags/Yudurobotics.png";
+import scikraftLogo from "../Assets/Images/imags/scikraft.png";
+import logo from "../Assets/Images/imags/red_nerds_logo.png";
 
 
 function renderImage(imageName) {
@@ -80,6 +88,24 @@ function renderImage(imageName) {
             return group702;
         case "group683a":
             return group683a;
+        case "anexgateLogo":
+            return anexgateLogo;
+        case "etherwhereLogo":
+            return etherwhereLogo;
+        case "cclLogo":
+            return cclLogo;
+        case "noshLogo":
+            return noshLogo;
+        case "vayavyaLogo":
+            return vayavyaLogo;
+        case "yuduroboticsLogo":
+            return yuduroboticsLogo;
+        case "scikraftLogo":
+            return scikraftLogo;
+        case "logo":
+            return logo;
+        default:
+            return yuduroboticsLogo;
 
     }
 }

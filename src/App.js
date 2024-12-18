@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './Compontents/Pages/Home';
 import WhatsappLogo from './Compontents/ReuseableCompontents/WhatsappLogo/WhatsappLogo';

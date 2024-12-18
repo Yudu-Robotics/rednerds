@@ -144,7 +144,7 @@
   align-items: center;
   font-family: "TT Hoves DemiBold";
   color: #da3540;
-  font-size: 44px;
+  font-size: 48px;
 }
 .line-1st {
   animation: RightToLeft 10s infinite linear;
@@ -214,12 +214,14 @@
 .product-header {
   color: white;
   font-family: "TT Hoves DemiBold";
+  font-size: 20pt;
   margin-top: 20px;
 }
 .product-text {
   color: white;
   font-family: "TT Hoves ExtraLight";
   margin-top: 20px;
+  font-size: 20pt;
   width: 250px;
 }
 
